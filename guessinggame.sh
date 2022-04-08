@@ -3,6 +3,7 @@ files=$(ls | wc -l)
 function guess {
     while [[ 1 -gt 0 ]]
     do
+        echo "Enter your guess"
         read input
         if [[ $input -eq $files ]]
         then
